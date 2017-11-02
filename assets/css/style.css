@@ -8,6 +8,7 @@ body {
 }
 
 
+
 /* A paragraph proceeded by another paragraph will have a top margin.
 Thanks, Tim (https://stackoverflow.com/users/453277/tim-medora) */
 
@@ -45,6 +46,7 @@ h2 {
 }
 
 
+
 /* Properties for links. */
 
 a {
@@ -68,6 +70,7 @@ a.nav-current {
     color: #000000;
     text-decoration: none;
 }
+
 
 
 /* For forms. */
@@ -128,6 +131,7 @@ footer {
 }
 
 
+
 /* This is where my name goes. */
 
 #logo {
@@ -161,6 +165,7 @@ footer {
 }
 
 
+
 /*   content: " "; 
    display: block;
    clear: both;
@@ -172,6 +177,7 @@ footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
 
 
 /* This is the ID for the entire content area. */
@@ -190,6 +196,7 @@ footer {
 }
 
 
+
 /* This is the ID for the main section content area. */
 
 #content {
@@ -205,6 +212,7 @@ footer {
     border-color: #cccccc;
     border-style: solid;
 }
+
 
 
 /* This is the ID for the sidebar, which should appear to the right of the main content. */
@@ -243,6 +251,7 @@ footer {
 }
 
 
+
 /* Container for portfolio images. */
 
 .container {
@@ -259,6 +268,7 @@ footer {
 }
 
 
+
 /* Text that goes over portfolio images. */
 
 .textover {
@@ -272,3 +282,41 @@ footer {
     font-size: 25px;
     line-height: 60px;
 }
+
+@media screen and (max-width: 980px) {
+    #logo {
+        left: 75px;
+    }
+    #navlinks {
+        right: 75px;
+    }
+    #content {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        left: 15px;
+    }
+    #navlinks {
+        right: 15px;
+    }
+    #content {
+        max-width: 700px;
+    }
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #sidebar {
+        float: initial;
+        width: -webkit-fill-available;
+        padding: 15px;
+        position: relative;
+        display: inline-block;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {}
