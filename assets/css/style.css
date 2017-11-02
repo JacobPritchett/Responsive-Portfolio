@@ -1,0 +1,274 @@
+body {
+    color: #777777;
+    font-size: 16px;
+    background-image: url("../images/playstation-pattern.png");
+    background-repeat: repeat;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+
+/* A paragraph proceeded by another paragraph will have a top margin.
+Thanks, Tim (https://stackoverflow.com/users/453277/tim-medora) */
+
+p+p {
+    margin-top: 8px;
+}
+
+img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img.profile {
+    float: left;
+    margin: 10px 15px 0 0;
+}
+
+img.social:hover {
+    filter: invert(100%);
+}
+
+h1,
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Properties for links. */
+
+a {
+    text-decoration: none;
+}
+
+a.nav {
+    color: #777777;
+    text-decoration: none;
+}
+
+a.nav:hover {
+    color: #000000;
+}
+
+a.nav-current:hover {
+    color: #000000;
+}
+
+a.nav-current {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+/* For forms. */
+
+input {
+    width: 100%;
+    position: relative;
+}
+
+hr {
+    border-top: 2px solid #cccccc;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-width: 2px;
+    border-color: #cccccc;
+    border-style: solid;
+    position: relative;
+    background-color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    padding: 0;
+    margin-top: 9px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    border-top-width: 5px;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    border-color: #4aaaa5;
+    border-style: solid;
+    position: relative;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    line-height: 75px;
+    clear: both;
+}
+
+#header-content {
+    float: left;
+    position: relative;
+}
+
+
+/* This is where my name goes. */
+
+#logo {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    left: 200px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+#navlinks {
+    color: #777777;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    max-width: 300px;
+    overflow: auto;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    right: 200px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+
+/*   content: " "; 
+   display: block;
+   clear: both;
+} */
+
+#first,
+#second {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* This is the ID for the entire content area. */
+
+#main {
+    max-width: 960px;
+    line-height: 1.5;
+    /* float: none; */
+    overflow: hidden;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+
+
+/* This is the ID for the main section content area. */
+
+#content {
+    background-color: #ffffff;
+    float: none;
+    overflow: auto;
+    position: relative;
+    display: inline-block;
+    max-width: 650px;
+    padding: 30px;
+    margin: 0 auto;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+}
+
+
+/* This is the ID for the sidebar, which should appear to the right of the main content. */
+
+#sidebar {
+    background-color: #ffffff;
+    float: right;
+    overflow: auto;
+    width: 270px;
+    padding: 15px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 0 auto;
+    margin-bottom: : 0 auto;
+    margin-right: 0 auto;
+    margin-left: 30px;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+}
+
+#sidebar-elements {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.wrap {
+    min-height: calc(100vh - 89px);
+}
+
+.clearfix::after {
+    content: “”;
+    display: block;
+    clear: both;
+}
+
+
+/* Container for portfolio images. */
+
+.container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    max-width: 300px;
+}
+
+.container:hover {
+    color: black;
+}
+
+
+/* Text that goes over portfolio images. */
+
+.textover {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    width: 100%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 25px;
+    line-height: 60px;
+}
