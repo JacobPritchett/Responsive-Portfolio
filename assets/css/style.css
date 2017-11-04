@@ -322,7 +322,48 @@ footer {
 }
 
 /* Smartphone Screens */
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+    #logo {
+        left: 50%;
+        right: 50%;
+        text-align: center;
+        max-width: 100%;
+        padding: 0px;
+    }
+    #header-content {
+        max-width: 100%;
+    }
+    #navlinks {
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: 75px;
+        text-align: center;
+        float: left;
+        display: inline-block;
+        max-width: 700px;
+        background-color: #ffffff;
+    }
+    header {
+        height: 150px;
+        background-color: #4aaaa5;
+    }
+    #content {
+        max-width: 700px;
+    }
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #sidebar {
+        float: initial;
+        width: -webkit-fill-available;
+        padding: 15px;
+        position: relative;
+        display: inline-block;
+        margin-left: 0px;
+    }
+}
 
 /* Target based on device */
 @media screen and (max-device-width: 980px) {
@@ -361,4 +402,45 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 640px) {}
+@media screen and (max-device-width: 640px) {
+    #logo {
+        left: 50%;
+        right: 50%;
+        text-align: center;
+        max-width: 100%;
+        padding: 0px;
+    }
+    #header-content {
+        max-width: 100%;
+    }
+    #navlinks {
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        top: 75px;
+        text-align: center;
+        float: left;
+        display: inline-block;
+        max-width: 700px;
+        background-color: #ffffff;
+    }
+    header {
+        height: 150px;
+        background-color: #4aaaa5;
+    }
+    #content {
+        max-width: 700px;
+    }
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #sidebar {
+        float: initial;
+        width: -webkit-fill-available;
+        padding: 15px;
+        position: relative;
+        display: inline-block;
+        margin-left: 0px;
+    }
+}
